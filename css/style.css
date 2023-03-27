@@ -111,6 +111,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 .icon-search {
     width: 50px;
@@ -257,6 +258,9 @@ flex-direction:row ;
     border-radius: 15px;
     padding: 30px;
     
+}
+.hebergements .row {
+    margin-bottom: 30px;
 }
 .hebergement-cards {
    width: 30%;
