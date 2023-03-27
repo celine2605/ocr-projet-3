@@ -13,7 +13,14 @@
 
 .fa-solid {
     color: var(--main-color);
+    font-size: 22px;  
+
+}  
+.fa-sharp {
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
 .fa-location-dot {
     color: var(--black);
     font-size: 20px;
@@ -23,24 +30,14 @@ nav {
 
 }
 h3 {
-    size: 18px;
+  font-size: 18px;
+}
+.h2{
+font-size:17px;
+text-align: center;
 }
 .filtres {
     padding: 30px 0 0 0 ;
-}
-.filtre div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.choix div {
-    margin: 10px;
-    padding: 15px;
-    border-radius: 25px;
-    border: 2px solid var(--tiny-grey);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .bleu {
@@ -161,6 +158,8 @@ nav a:hover {
     visibility: hidden;
 }
 /*-- partie filtre --*/
+
+
 .fitre-section {
     display: flex;
     flex-direction: row;
@@ -172,28 +171,33 @@ nav a:hover {
     margin-right: 20px;
     font-size: 18px;
     font-weight: 700;
+   
 }
 .card-filtre {
     border: 2px solid #d9d9d9;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 50px;
     display: flex;
     align-items: center;
-    width: 100%;
-    height: 40%;
+    width: 70%;
     margin-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 15px;
 }
 
-.lign-filtre {
-
-    display: flex;
-}
 .card-filtre :hover {
     background-color: #DEEBFF;
     border-color: transparent;
     cursor: pointer;
 }
-
+.row-filtre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
 
 /*--N--*/
 
@@ -288,7 +292,10 @@ flex-direction:row ;
   display: flex;
   flex-direction: row;
   justify-content: space-between ;
+
 }
+‹
+
 .column {
     display: flex;
     flex-direction: column;
