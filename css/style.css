@@ -35,7 +35,7 @@ p {
 }
 h2{
 font-size:17px;
-text-align: center;
+
 }
 header a {
     text-decoration: none;
@@ -74,6 +74,11 @@ header img {
     margin-top: 30px;
     margin-bottom: 60px;
 }
+ nav header ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -86,7 +91,11 @@ nav a {
     width: 194px;
     padding-top: 16px;
 }
+header nav ul {
+    list-style-type: none;
+    display: flex;
 
+}
 
 
 
@@ -187,7 +196,6 @@ justify-content: center;
     margin-right: 20px;
     font-size: 18px;
     font-weight: 700;
-   
 }
 .card-filtre {
     border: 2px solid #d9d9d9;
@@ -313,7 +321,7 @@ flex-direction:row ;
   justify-content: space-between ;
 
 }
-‹
+
 .align {
     display: flex;
     flex-direction: row;
@@ -408,6 +416,7 @@ cursor: pointer;
 }
 
 .activite-section {
+    height: 100%;
     display: flex;
     flex-direction: column;
     margin-right: 80px;
@@ -435,7 +444,7 @@ cursor: pointer;
 .card-activites img{
     object-fit: cover;
     width: 100%;
-    height: 200px;
+    /* height: 380px; */
     border-radius: 20px 20px 0 0;
     padding-bottom: 10px;
     
@@ -446,35 +455,52 @@ cursor: pointer;
     font-weight: bold;
     cursor: pointer;
 }
-
+figure {
+    height: 100%;
+}
 /****** pied de page ***********/
 
 footer {
+
     padding: 45px 70px;
     display: flex;
     justify-content: flex-start;
-    background: var(--main-bg-color)
+    background: var(--main-bg-color)}
+
+    footer ul {
+        
+        display: flex;
+        justify-content: flex-start;
+        padding-right: 20px;
+        flex-direction: column;
+        
+    
+
 }
-ul {
-    list-style-type: none;
+
+footer div {
+    width: 30%;
     display: flex;
-    width: 100%;
+    flex-direction: column;
 }
-li {
-    width: 33%
+
+
+footer li {
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
 
 }
 footer h2 {
-text-align: left;
-}
-footer a {
-    text-decoration: none;
-    color: black;
+    display: flex;
+flex-direction: column;
+
+
 }
 
-.abfooter {
-    background-color: var(--main-bg-color);
-}
+
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
