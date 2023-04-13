@@ -30,52 +30,48 @@
             <section class="under-header tagline-infos ">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>Enplein centre ville ou en pleine nature</p>
-                <div class="search-bar">
+                <form class="search-bar">
                     <div class="icon-search">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <input type="text" placeholder="Marseille, France" class="input">
-                    <button type="submit" class="search-button">Rechercher</button>
-                    <button class="search-magnifying-glass"><i class="fas fa-search"></i>
+                    <input type="search" placeholder="Marseille, France">
+                    <button class="search-button">Rechercher</button>
+                    <button class="search-magnifying-glass"><i class="fa-solid fa-search"></i>
                     </button>
-                </div>
+                </form>
             </section>
             <!--filtres-->
-            <div class="row-filtre">
-                <h2 class="title-filtre">Filtres</h2>
-                <div class="card-filtre">
-                    <aside>
-                        <div class="row">
-                            <i class="fa-sharp fa-solid fa-money-bill"></i>
-                            <h3>Economique</h3>
-                        </div>
-                    </aside>
-                </div>
-                <div class="card-filtre">
-                    <aside>
-                        <div class="row">
-                            <i class="fa-sharp fa-solid fa-person"></i>
-                            <h3>Familial</h3>
-                        </div>
-                    </aside>
-                </div>
-                <div class="card-filtre">
-                    <aside>
-                        <div class="row">
-                            <i class="fa-sharp fa-solid fa-heart"></i>
-                            <h3>Romantique</h3>
-                        </div>
-                    </aside>
-                </div>
-                <div class="card-filtre">
-                    <aside>
-                        <div class="row">
-                            <i class="fa-sharp fa-solid fa-fire"></i>
-                            <h3>Nos pépites</h3>
-                        </div>
-                    </aside>
-                </div>
-            </div>
+            <section class="filtre">
+                <h2>Filtres</h2>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-money-bill"></i>
+                        Economique
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-person"></i>
+                        Familial
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-heart"></i>
+                        Romantique
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-fire"></i>
+                        Nos pépites
+
+                    </li>
+                </ul>
+            </section>
+
+
+
             <div class="dispo">
                 <div class="icon-info"><i class="fa-solid fa-info"> </i></div>
                 <div>
@@ -240,6 +236,7 @@
                     </div>
                 </section>
             </div>
+
             <section class="activite-section">
                 <h1>Activités à Marseille</h1>
                 <div class="card-lign">
@@ -273,28 +270,42 @@
         </main>
         <!-- pied de page -->
         <footer>
-            <div>
-                <h2>A propos</h2>
+            <section>
+                <h3>A propos</h3>
                 <ul>
-                    <li>Fonctionnement du site</li>
-                    <li>Conditions génerales</li>
-                    <li>Données et confidentialité</li>
+                    <li>
+                        <a href="#">Fonctionnement du site</a>
+                    </li>
+                    <li>
+                        <a href="#">Conditions génerales</a>
+                    </li>
+                    <li>
+                        <a href="#">Données et confidentialité</a>
+                    </li>
                 </ul>
-            </div>
-            <div>
-                <h2>Nos Hébergements</h2>
+            </section>
+            <section>
+                <h3>nos Hébergements</h3>
                 <ul>
-                    <li>Chartes qualité</li>
-                    <li>Proposé votre hotel</li>
+                    <li>
+                        <a href="#">Chartes qualité</a>
+                    </li>
+                    <li>
+                        <a href="#">Proposé votre hôtel</a>
+                    </li>
                 </ul>
-            </div>
-            <div>
-                <h2>Assistance</h2>
+            </section>
+            <section>
+                <h3>Assistance</h3>
                 <ul>
-                    <li>Centre d'aide</li>
-                    <li>Nous contacter</li>
+                    <li>
+                        <a href="#">Centre d'aide</a>
+                    </li>
+                    <li>
+                        <a href="#">Nous contacter</a>
+                    </li>
                 </ul>
-            </div>
+            </section>
         </footer>
     </div>
 </body>
