@@ -15,6 +15,7 @@
 .fa-solid {
     color: var(--main-color);
     font-size: 22px;  
+    
 
 }  
 
@@ -186,6 +187,8 @@ input {
     margin-right: 40px;
     padding-top: 20px;
     padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-left: 15px;
     text-align: center;
     justify-content: center;
@@ -361,7 +364,7 @@ flex-direction:row ;
 
 .populaires-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
