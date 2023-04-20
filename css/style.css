@@ -189,7 +189,7 @@ input {
     cursor: pointer;
 }
 .filtre {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
@@ -197,7 +197,7 @@ input {
     margin-right: 20px;
     font-size: 18px;
     font-weight: 700;
-    
+    justify-content: first baseline;
 }
 
 
