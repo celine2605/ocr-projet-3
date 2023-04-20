@@ -11,7 +11,25 @@
     --filter-bg-color: #DEEBFF;
 
 }
+figure {
+    margin: 0;
+    
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 
+}
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
 .fa-solid {
     color: var(--main-color);
     font-size: 22px;  
@@ -19,10 +37,6 @@
 
 }  
 
-header a {
-    text-decoration: none;
-    color: var(--main-color);
-}
 header h1 {
 font-size: 22px;
 margin-bottom: 8px;
@@ -55,10 +69,11 @@ header img {
     margin-top: 30px;
     margin-bottom: 60px;
 }
-nav header ul {
-    list-style-type: none;
+nav ul {
     display: flex;
+    
     width: 100%;
+    gap: 30px;
 }
 nav {
     display: flex;
@@ -66,15 +81,21 @@ nav {
     width: 100%;
 }
 
-nav a {
-    display: flex;
-    justify-content: center ;
-    width: 194px;
-    padding-top: 16px;
+nav a {  
+    display: inline-block; 
+    padding-top: 10px;
+    border-top: 1px solid transparent;
+
+}
+nav a:hover,
+nav a:focus {
+    border-color: var(--main-color);
+    color: var(--main-color);
 }
 header nav ul {
     list-style-type: none;
     display: flex;
+    
 
 }
 .tagline-infos {
