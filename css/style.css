@@ -634,7 +634,19 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 }
+nav img {
+    margin: 30px;
+}
+nav ul {
+    padding: 0;
+}
+
+
+
+
+
 
 }
 footer {
