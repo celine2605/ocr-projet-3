@@ -623,11 +623,25 @@ main figcaption {
 .card-activites img{
     height: 80%;
 }
-footer {
+.footer {
     justify-content: space-between;
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767px) {
     /* ... */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+}
+footer {
+    display: flex;
+    flex-direction: column;
+}
+footer section {
+    width: 20%;
+    padding-bottom: 20px
 }
