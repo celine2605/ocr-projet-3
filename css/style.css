@@ -37,19 +37,21 @@ a {
     text-decoration: none;
     color: #000;
 }
-.fa-location-dot {
-    color: #000;
+
+p {
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.fa-solid-recherche {
-    color: var(--main-color);
-    font-size: 22px;
-}
 .fa-solid {
     color: var(--main-color);
     font-size: 22px;
 
 }
+.fa-location-dot {
+    color: #000;
+}
+
 .fa-money-bill-wave {
     padding-right: 10px;
 }
@@ -226,7 +228,8 @@ input {
 }
 
 .filtre li:hover,
-.filtre li:focus {
+.filtre li:focus 
+{
     background: var(--filter-bg-color)
 }
 
@@ -235,6 +238,7 @@ input {
     border-radius: 50px;
     padding: 20px;
     cursor: pointer;
+    font-size: 17px;
 
 }
 
@@ -242,6 +246,7 @@ input {
 .filtre a {
     color: black;
     padding-left: 10px;
+
 }
 
 
@@ -257,6 +262,7 @@ input {
     justify-content: first baseline;
     gap: 50px;
 }
+
 
 
 /*--N--*/
@@ -563,6 +569,15 @@ footer section {
         flex-direction: column;
 
     }
+    .filtre {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+.filtre li {
+    font-size: 16px;
+    padding: 15px;
+}
 
     .tablette-align {
         flex-direction: row;
@@ -601,6 +616,15 @@ footer section {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+}
+main figcaption {
+    margin-top: 0;
+}
+.card-activites img{
+    height: 80%;
+}
+footer {
+    justify-content: space-between;
 }
 
 /* Small devices (phones, less than 768px) */
