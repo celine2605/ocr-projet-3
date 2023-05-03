@@ -40,7 +40,7 @@ a {
 
 p {
     font-size: 18px;
-    font-weight: bold;
+    
 }
 
 .fa-solid {
@@ -564,7 +564,7 @@ footer section {
     .main-container {
         padding: 0 20px;
     }
-
+}
     .row {
         flex-direction: column;
 
@@ -616,7 +616,7 @@ footer section {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-}
+
 main figcaption {
     margin-top: 0;
 }
@@ -643,17 +643,40 @@ nav ul {
     padding: 0;
 }
 
-
-
-
-
-
+.row {
+    align-items: center;
+    flex-direction: column-reverse;
 }
+.hebergement-cards{
+    width: 90%;
+    margin: 10px;
+}
+
+.populaires-cards .card {
+    width: 100%;}
+
+.populaires-cards {
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-lign {
+        flex-direction: column;
+        align-items: center;
+    }        
+.card-activites{
+    width: 90%;
+    margin: 10px;
+
+}  
 footer {
     display: flex;
     flex-direction: column;
 }
+
 footer section {
     width: 20%;
     padding-bottom: 20px
+}
+
 }
