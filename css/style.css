@@ -633,7 +633,7 @@ main figcaption {
     align-items: center;
     margin-bottom: 30px;
     padding-bottom: 15px;
-    border-bottom: 2px solid var(--filter-bg-color);
+  
   }
 nav img {
     margin: 30px;
@@ -647,12 +647,26 @@ header nav ul {
 }
 nav a:hover {
     border-top: none;
-    border-bottom: 2px solid var(--main-color);
-    
+      
+}
+nav a {
+  display: inline-block;
+  padding-bottom: 15px;
+  border-bottom: 1px solid transparent;
 }
 .row {
     align-items: center;
     flex-direction: column-reverse;
+}
+.populaires{
+
+    box-sizing: content-box;
+    margin-right: 0px;
+}
+
+.hebergements {
+    background-color: transparent;
+    box-sizing: content-box;
 }
 .hebergement-cards{
     width: 90%;
@@ -663,9 +677,10 @@ nav a:hover {
     width: 100%;}
 
 .populaires-cards {
-        
+        width: 85%;
         flex-direction: column;
         align-items: center;
+        margin: auto;
     }
 .card-lign {
         flex-direction: column;
@@ -676,6 +691,10 @@ nav a:hover {
     margin: 10px;
 
 }  
+.card{
+    padding: 10px;
+}
+
 footer {
     display: flex;
     flex-direction: column;
