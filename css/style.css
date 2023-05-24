@@ -192,24 +192,31 @@ input {
 .input::placeholder {
     color: rgb(0, 0, 0);
 }
-
+button{
+    height: 49px;  
+    background-color: var(--main-color);
+    color: white;
+}
 .search-button {
     width: 132px;
-    height: 49px;
     gap: 10px;
     border-radius: 0 15px 15px 0;
     border-style: none;
-    background-color: var(--main-color);
-    color: white;
     font-size: 18px;
     text-align: center;
     cursor: pointer;
+
 }
 
 .search-magnifying-glass {
     display: none;
+    border-radius: 15px;
+    padding: 10px;
 }
+.fa-magnifying-glass{
 
+    color: #FFF
+}
 .fa-search {
     visibility: hidden;
 }
@@ -653,6 +660,17 @@ nav a {
   display: inline-block;
   padding-bottom: 15px;
   border-bottom: 1px solid transparent;
+}
+.search-button{
+    display: none;
+}
+.search-magnifying-glass{
+    display:block;
+}
+
+.filtre li {
+    width: 140px;
+    padding: 10px;
 }
 .row {
     align-items: center;
