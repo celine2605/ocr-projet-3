@@ -84,7 +84,7 @@ body {
 }
 
 header {
-    
+
     margin-right: 67px;
     margin-left: 55px;
 }
@@ -179,7 +179,7 @@ input {
     border: 1px solid var(--main-bg-color);
     padding-left: 17px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
@@ -259,16 +259,16 @@ button {
 
 
 .filtre {
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
     align-items: center;
-    margin-right: 20px;
     font-size: 18px;
     font-weight: 700;
-    justify-content: first baseline;
+
     gap: 50px;
+    box-sizing: border-box;
 }
 
 
@@ -333,6 +333,7 @@ button {
     border-radius: 15px;
     padding: 20px;
     margin-top: 30px;
+    box-sizing: border-box;
 
 }
 
@@ -422,6 +423,7 @@ button {
     border-radius: 15px;
     padding: 30px;
     margin-top: 30px;
+    box-sizing: border-box;
 }
 
 .populaires-title {
@@ -469,8 +471,8 @@ main figcaption {
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
-    padding: 0 20px 5px;
-    
+    padding: 10px 20px 5px;
+
 }
 
 main h2 {
@@ -489,7 +491,12 @@ main h4 {
 main p {
     font-size: 14px;
 }
+b {
+position: absolute;  
+margin: 20px 0 -5px;
 
+
+}
 .activite-section {
     width: 95%;
     display: flex;
@@ -519,7 +526,7 @@ main p {
     width: 100%;
     height: 85%;
     border-radius: 20px 20px 0 0;
-    
+
 }
 
 figure {
@@ -566,10 +573,11 @@ footer section {
 
 
 @media screen and (max-width: 1023px) {
-  header {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
+    header {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
     .main-container {
         padding: 0 20px;
     }
@@ -602,7 +610,6 @@ footer section {
     .hebergements,
     .populaires {
         width: 100%;
-        box-sizing: border-box;
     }
 
     .populaires {
@@ -615,9 +622,11 @@ footer section {
         flex-direction: row;
         justify-content: space-between;
     }
-.populaires-cards a {
-    width: 30%;
-}
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
     .populaires-cards .card {
         width: 100%;
     }
@@ -629,15 +638,16 @@ footer section {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-.fa-solid {
-    font-size: 18px;
-}
+
+    .fa-solid {
+        font-size: 18px;
+    }
 
     main figcaption {
         margin-top: 0;
     }
 
-   
+
 
     .footer {
         justify-content: space-between;
@@ -646,20 +656,27 @@ footer section {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767px) {
+
     /* ... */
-header {
-    margin-left: 0px;
-    margin-right: 0px;
+    header {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .tagline-infos,
+    .filtre,
+    .dispo,
+    .hebergements
+    {
+        padding: 0 20px;
+    }
+.populaires{
+    padding: 20px;
 }
-.tagline-infos,
-.filtre,
-.dispo,
-main {
-    padding: 0 20px;
-}
-.main-container {
-    padding: 0;
-}
+    .main-container {
+        padding: 0;
+    }
+
     nav {
         display: flex;
         flex-direction: column;
@@ -682,10 +699,12 @@ main {
         justify-content: space-around;
         gap: 0px;
     }
-nav li {
-    width: 50%;
-    text-align: center;
-}
+
+    nav li {
+        width: 50%;
+        text-align: center;
+    }
+
     nav a:hover {
         border-top: none;
 
@@ -717,14 +736,12 @@ nav li {
     }
 
     .populaires {
-
-        box-sizing: content-box;
         margin-right: 0px;
     }
 
     .hebergements {
         background-color: transparent;
-        box-sizing: content-box;
+
     }
 
     .hebergement-cards {
@@ -742,12 +759,15 @@ nav li {
         align-items: center;
         margin: auto;
     }
-.populaires-cards a {
-    width: 100%;
-}
-.card-activites img {
-    height: 141px;
-}
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .card-activites img {
+        height: 141px;
+    }
+
     .card-lign {
         flex-direction: column;
         align-items: center;
@@ -758,7 +778,12 @@ nav li {
         margin: 10px;
 
     }
-
+    main figcaption {
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: bold;
+        padding: 5px 0 10px 20px;
+    }
     .card {
         padding: 10px;
     }
